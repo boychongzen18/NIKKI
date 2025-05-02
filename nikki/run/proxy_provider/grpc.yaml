@@ -3,27 +3,16 @@ proxies:
 # ===============================================
    ##-> RAKITAN BugHost XL ALL COMBO  <-##
 # ===============================================
-- name: GRPC-IDC TURBO SUPER
+- name: GRPC TURBO SUPER
   type: trojan
-  server: df.game.naver.com
+  server: bughost.com
   port: 443
-  password: tj_casper
+  password: croot
   udp: true
-  sni: zakyid3.dklongtong.xyz
+  sni: akun-premium.com
   skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: Trojan-GRPC
 # ===============================================
-- name: GRPC-ATHA TURBO SUPER
-  type: trojan
-  server: investor.fb.com
-  port: 443
-  password: grpc_bangboy
-  udp: true
-  sni: zakyid.dklongtong.xyz
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Trojan-GRPC
-# ===============================================
+
