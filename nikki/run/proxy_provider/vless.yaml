@@ -3,35 +3,21 @@ proxies:
 # ===============================================
    ##-> RAKITAN BugHost XL ALL COMBO  <-##
 # ===============================================
-- name: VL-ATHA TURBO SUPER 
+- name: VL TURBO SUPER 
   type: vless
-  server: df.game.naver.com
+  server: bughost.com
   port: 443
-  uuid: vl_bangboy
+  uuid: croot
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: zakyid.dklongtong.xyz
+  servername: akun-premium.com
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: zakyid.dklongtong.xyz
+      Host: akun-premium.com
 #==============================================
-- name: VL-IDC TURBO SUPER 
-  type: vless
-  server: investor.fb.com
-  port: 443
-  uuid: vl_casper
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: zakyid3.dklongtong.xyz
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: zakyid3.dklongtong.xyz
-#==============================================
+
 
 
