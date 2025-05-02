@@ -5,35 +5,19 @@ proxies:
 # ===============================================
 - name: VM-ATHA TURBO SUPER
   type: vmess
-  server: account.pmang.game.naver.com
+  server: bughost.com
   port: 443
-  uuid: vm_bangboy
+  uuid: croot
   alterId: 0
   cipher: auto
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: zakyid.dklongtong.xyz
+  servername: akun-premium.com
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: zakyid.dklongtong.xyz
+      Host: akun-premium.com
 #==============================================
-- name: VM-IDC TURBO SUPER
-  type: vmess
-  server: investor.fb.com
-  port: 443
-  uuid: vm_casper
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: zakyid3.dklongtong.xyz
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: zakyid3.dklongtong.xyz
-#==============================================
+
