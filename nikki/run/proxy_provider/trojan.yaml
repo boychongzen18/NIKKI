@@ -1,1 +1,20 @@
+# RAKITAN CONFIG Boychongzen aka Xroot
+proxies:
+# ===============================================
+   ##-> RAKITAN BugHost XL ALL COMBO  <-##
+# ===============================================
+- name: TJ TURBO SUPER 
+  type: trojan
+  server: BUGHOST.com
+  port: 443
+  password: CROOT
+  udp: true
+  sni: AKUN-PREMIUM.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: AKUN-PREMIUM.com
+# ===============================================
 
