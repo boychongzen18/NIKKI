@@ -195,5 +195,3 @@ rule-providers:
 geodata-mode: false
 geodata-loader: memconservative
 tcp-concurrent: false
-authentication:
-- Clash:oHeRh67o
