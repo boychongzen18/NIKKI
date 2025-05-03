@@ -1,6 +1,6 @@
 # RULES CONFIG Boychongzen aka Xroot
 payload:
-  # Youtube Only
+  # Youtube
   - DOMAIN-KEYWORD,youtube
   - DOMAIN-KEYWORD,googlevideo
   - DOMAIN-KEYWORD,gvt2
