@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,rocksdb.org
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,whatsapp.net
+  - DOMAIN-SUFFIX,web.whatsapp.com
   - DST-PORT,3478
   - DST-PORT,4244
   - DST-PORT,5222
@@ -19,3 +20,4 @@ payload:
   - DST-PORT,45395
   - DST-PORT,50318
   - DST-PORT,59234
+
