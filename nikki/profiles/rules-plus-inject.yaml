@@ -73,9 +73,9 @@ log-level: silent
 allow-lan: true
 unified-delay: true
 external-controller: 0.0.0.0:1080
-secret: RULES
+secret: boychongzen
 bind-address: "*"
-external-ui: "/usr/share/openclash/ui"
+external-ui: "/etc/nikki/run/ui"
 dns:
   enable: true
   ipv6: false
