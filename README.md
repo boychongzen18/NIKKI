@@ -3,7 +3,7 @@
 # Created Boychongzen aka Xroot
 
 #  Menu Nikki
-![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/nikki2.jpg)
+![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/nikki3.jpg)
 #  Tampilan akun
 ![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/nikki-1.jpg)
 
