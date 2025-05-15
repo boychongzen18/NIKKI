@@ -1,0 +1,111 @@
+---
+proxy-providers:
+  "░A░k░u░n░ ░P░r░e░m░i░u░m░":
+    type: file
+    path: "./proxy_provider/trojan.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 10
+proxy-groups:
+- name: "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - "░A░k░u░n░ ░P░r░e░m░i░u░m░"
+  url: https://cp.cloudflare.com/generate_204
+  interval: '10'
+- name: "░▒▓█ Youtube █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ Tiktok █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ Facebook █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ Whatsapp █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ FreeFire █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ MobileLegends █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ E-Wallet █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+- name: "░▒▓█ Block Site █▓▒░"
+  type: select
+  disable-udp: false
+  proxies:
+  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
+    ▂ ▁"
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: global
+allow-lan: true
+external-controller: 0.0.0.0:1080
+secret: PL100
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  nameserver:
+  - dhcp://"wan"
+  - 192.168.8.1
+  - 114.114.114.114
+  - 119.29.29.29
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  default-nameserver:
+  - 192.168.8.1
+  - 114.114.114.114
+  - 119.29.29.29
+experimental:
+  sniff-tls-sni: true
+tun:
+  enable: true
+  stack: system
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+profile:
+  store-selected: true
+rules:
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- DST-PORT,7892,REJECT
+- DST-PORT,7895,REJECT
