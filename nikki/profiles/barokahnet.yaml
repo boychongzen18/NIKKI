@@ -51,7 +51,7 @@ allow-lan: true
 external-controller: 0.0.0.0:1080
 secret: BarokahNET
 bind-address: "*"
-external-ui: "/usr/share/openclash/ui"
+external-ui: "/etc/nikki/run/ui"
 ipv6: false
 dns:
   enable: true
