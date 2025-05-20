@@ -1,8 +1,29 @@
 ---
 proxy-providers:
-  "░A░k░u░n░ ░P░r░e░m░i░u░m░":
+  "░▒▓█ TROJAN WSS █▓▒░":
     type: file
     path: "./proxy_provider/trojan.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 10
+  "░▒▓█ GRPC WS █▓▒░":
+    type: file
+    path: "./proxy_provider/grpc.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 10
+  "░▒▓█ VLESS █▓▒░":
+    type: file
+    path: "./proxy_provider/vless.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 10
+  "░▒▓█ VMESS █▓▒░":
+    type: file
+    path: "./proxy_provider/vmess.yaml"
     health-check:
       enable: true
       url: https://cp.cloudflare.com/generate_204
@@ -14,57 +35,12 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   use:
-  - "░A░k░u░n░ ░P░r░e░m░i░u░m░"
+  - "░▒▓█ TROJAN WSS █▓▒░"
+  - "░▒▓█ GRPC WS █▓▒░"
+  - "░▒▓█ VLESS █▓▒░"
+  - "░▒▓█ VMESS █▓▒░"
   url: https://cp.cloudflare.com/generate_204
   interval: '10'
-- name: "░▒▓█ Youtube █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ Tiktok █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ Facebook █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ Whatsapp █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ FreeFire █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ MobileLegends █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ E-Wallet █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
-- name: "░▒▓█ Block Site █▓▒░"
-  type: select
-  disable-udp: false
-  proxies:
-  - "▁ ▂ \U0001D4AF\U0001D4B0\U0001D4A9\U0001D438\U0001D43F\U0001D43F\U0001D43C\U0001D4A9\U0001D4A2
-    ▂ ▁"
 redir-port: 7892
 tproxy-port: 7895
 port: 7890
@@ -73,7 +49,7 @@ mixed-port: 7893
 mode: global
 allow-lan: true
 external-controller: 0.0.0.0:1080
-secret: PL100
+secret: BarokahNET
 bind-address: "*"
 external-ui: "/usr/share/openclash/ui"
 ipv6: false
