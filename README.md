@@ -6,7 +6,9 @@
 ![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/nikki3.jpg)
 #  Tampilan akun
 ![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/nikki-1.jpg)
-
+#  Tampilan akun METACUBE
+![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/cube.jpg)
+![be](https://raw.githubusercontent.com/boychongzen18/NIKKI/refs/heads/main/cube1.jpg)
 
 
 My Website    : https://hackingforlive.wordpress.com
